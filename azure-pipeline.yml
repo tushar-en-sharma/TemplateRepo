@@ -1,5 +1,8 @@
-name: cicd_ci
 
+# Repo: chetagra/TemplateRepo
+# File: azure-pipeline.yml
+
+name: cicd_ci
 
 trigger:
   branches:
@@ -19,4 +22,3 @@ stages:
         pip install yamllint
         yamllint -d "{extends: relaxed, rules: {line-length: {max: 200}, new-line-at-end-of-file: disable, new-lines: disable}}" .
       displayName: 'YAML Lint Checks'
-  
