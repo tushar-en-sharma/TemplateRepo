@@ -23,9 +23,7 @@ steps:
   inputs:
     awsCredentials: 'AWS-USer-1'
     regionName: 'ap-south-1'
-    bucketName: 'newbuck'
-    globExpressions: '**'
-    createBucket: true
+    bucketName: 'newbuck'   
     keyManagement: 'awsManaged'
     encryptionAlgorithm: 'AES256'
     globExpressions: '**'
