@@ -12,7 +12,11 @@ pool:
   inputs:
     awsCredentials: 'AWS-USer-1'
     regionName: 'ap-south-1'
-    bucketName: 'Test_Bucket'
+    bucketName: 'newbuck'
+    globExpressions: '**'
+    createBucket: true
+    keyManagement: 'awsManaged'
+    encryptionAlgorithm: 'AES256'
     globExpressions: '**'
     createBucket: true
 
