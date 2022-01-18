@@ -24,10 +24,13 @@ stages:
         pip install yamllint
         yamllint -d "{extends: relaxed, rules: {line-length: {max: 200}, new-line-at-end-of-file: disable, new-lines: disable}}" .
       displayName: 'YAML Lint Checks'
+
     - task: S3Upload@1
       inputs:
         awsCredentials: 'AWS-USer-1'
-        regionName: 'ap-southeast-2'
-        bucketName: 'B1'
+        regionName: 'ap-south-1'
+        bucketName: 'NewBuck'
         globExpressions: '**'
         createBucket: true
+        keyManagement: 'awsManaged'
+        encryptionAlgorithm: 'AES256'
