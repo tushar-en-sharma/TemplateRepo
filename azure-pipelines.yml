@@ -26,7 +26,7 @@ stages:
       inputs:
         awsCredentials: 'AWS-USer-1'
         regionName: 'ap-south-1'
-        bucketName: 'Test12dddjdkwjdkj3'
+        bucketName: 'azuredevops2awss3upload'
         globExpressions: '**'
         createBucket: true
         keyManagement: 'awsManaged'
