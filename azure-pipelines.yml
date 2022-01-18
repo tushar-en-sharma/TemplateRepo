@@ -29,5 +29,3 @@ stages:
         bucketName: 'azuredevops2awss3upload'
         globExpressions: '**'
         createBucket: true
-        keyManagement: 'awsManaged'
-        encryptionAlgorithm: 'AES256'
